@@ -1,0 +1,41 @@
+{
+  "name": "blanc",
+  "description": "node module boilerplate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "latest",
+    "jshint": "latest",
+    "istanbul": "latest",
+    "jsdoc": "latest"
+  },
+  "scripts": {
+    "test": "mocha test/*.mocha.js",
+    "cover": "istanbul cover _mocha --report html -- -R dot --check-leaks test/*.mocha.js",
+    "lint": "jshint *.js */*.js",
+    "doc": "jsdoc -d doc -c jsdoc.json index.js lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/commenthol/blanc"
+  },
+  "keywords": [
+    "module",
+    "boilerplate"
+  ],
+  "author": "commenthol <commenthol@gmail.com>",
+  "maintainers": "commenthol <commenthol@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/commenthol/blanc/issues"
+  },
+  "homepage": "https://github.com/commenthol/blanc"
+}
