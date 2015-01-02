@@ -16,7 +16,7 @@ describe('what you like to test', function(){
 		this.timeout(3500);	// mocha usually exits a test at 2000ms with an assertion.
 							// If your tests run longer set `this.timeout(msecs)`
 		it('runs synchronously', function(){
-			assert(my.sync, 'sync');
+			assert.equal(my.sync(), 'sync');
 		});
 		it('runs asynchronously', function(done){
 			my.async(function(err, str){
