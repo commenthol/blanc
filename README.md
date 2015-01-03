@@ -5,11 +5,14 @@
 ![NPM version](https://badge.fury.io/js/blanc.svg)
 [![Build Status](https://secure.travis-ci.org/commenthol/blanc.svg?branch=master)](https://travis-ci.org/commenthol/blanc)
 
-This is a boilerplate for a node module using
-[mocha][] tests,
-[istanbul][] for code coverage,
-[jshint][] for code linting and
-[jsdoc][] for documentation.
+This is a boilerplate for a node module using:
+
+* [mocha][] tests,
+* [istanbul][] for code coverage,
+* [jshint][] for code linting and
+* [jsdoc][] for documentation.
+
+The files contain examples to show the usage of the different tools in your code.
 
 
 ## Table of Contents
@@ -26,6 +29,18 @@ This is a boilerplate for a node module using
 
 ## Description
 
+Run the different tools from `npm`
+
+* `npm test`      - Run tests
+
+* `npm run cover` - Run istanbul code coverage<br>
+    (shows code coverage; open [coverage/lcov-report/index.html](coverage/lcov-report/index.html) after run)
+
+* `npm run lint`  - Linting the source (returns errors)
+
+* `npm run doc`   - Generate documentation from source<br>
+    (open [doc/index.html](doc/index.html) after run)
+
 
 ### Example ...
 
@@ -36,13 +51,6 @@ If you contribute code to this project, you are implicitly allowing your
 code to be distributed under the MIT license. You are also implicitly
 verifying that all code is your original work or correctly attributed
 with the source of its origin and licence.
-
-## npm scripts
-
-* `npm test`      - Run tests
-* `npm run cover` - Run istanbul code coverage
-* `npm run lint`  - Linting the source
-* `npm run doc`   - Generate documentation from source
 
 ## License
 
