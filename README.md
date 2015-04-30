@@ -10,7 +10,7 @@ This is a boilerplate for a node module using:
 * [mocha][] tests,
 * [istanbul][] for code coverage,
 * [jshint][] for code linting and
-* [jsdoc][] for documentation.
+* [jsdox][] for documentation.
 
 The files contain examples to show the usage of the different tools in your code.
 
@@ -22,8 +22,8 @@ The files contain examples to show the usage of the different tools in your code
 * [Description](#description)
   * [Example ...](#example-)
 * [Contribution and License Agreement](#contribution-and-license-agreement)
-* [npm scripts](#npm-scripts)
 * [License](#license)
+* [References](#references)
 
 <!-- toc! -->
 
@@ -53,10 +53,22 @@ Copyright (c) 2015 commenthol (MIT License)
 
 See [LICENSE][] for more info.
 
+## References
+
+<!-- !ref -->
+
+* [istanbul][istanbul]
+* [jsdox][jsdox]
+* [jshint][jshint]
+* [LICENSE][LICENSE]
+* [mocha][mocha]
+
+<!-- ref! -->
+
 [LICENSE]: ./LICENSE
 [mocha]: http://mochajs.org/
 [jshint]: http://jshint.com/docs/options/
-[jsdoc]: http://usejsdoc.org/
+[jsdox]: http://jsdox.org/
 [istanbul]: https://github.com/yahoo/istanbul/
 
 

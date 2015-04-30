@@ -1,7 +1,7 @@
 {
   "name": "blanc",
+  "version": "0.1.0",
   "description": "node module boilerplate",
-  "version": "0.0.2",
   "main": "index.js",
   "engines": {
     "node": ">=0.8.0"
@@ -15,18 +15,19 @@
     "mocha": "latest",
     "jshint": "latest",
     "istanbul": "latest",
-    "jsdoc": "latest"
+    "jsdox": "latest"
   },
   "scripts": {
     "test": "mocha test/*.mocha.js",
     "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks test/*.mocha.js",
     "lint": "jshint --show-non-errors *.js */*.js",
-    "doc": "jsdoc -d doc -c jsdoc.json index.js lib/*.js",
+    "doc": "jsdox -o doc index.js lib/*.js",
+    "readme": "markedpp --githubid -i README.md -o README.md",
     "clean": "rm -rf doc coverage"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/commenthol/blanc"
+    "url": "https://github.com/commenthol/blanc.git"
   },
   "keywords": [
     "module",
