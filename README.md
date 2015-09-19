@@ -9,7 +9,7 @@ This is a boilerplate for a node module using:
 
 * [mocha][] tests,
 * [istanbul][] for code coverage,
-* [jshint][] for code linting and
+* [standard][] for code linting and
 * [jsdox][] for documentation.
 
 The files contain examples to show the usage of the different tools in your code.
@@ -62,12 +62,14 @@ See [LICENSE][] for more info.
 * [jshint][jshint]
 * [LICENSE][LICENSE]
 * [mocha][mocha]
+* [standard][standard]
 
 <!-- ref! -->
 
 [LICENSE]: ./LICENSE
 [mocha]: http://mochajs.org/
 [jshint]: http://jshint.com/docs/options/
+[standard]: http://standardjs.com
 [jsdox]: http://jsdox.org/
 [istanbul]: https://github.com/yahoo/istanbul/
 

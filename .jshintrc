@@ -1,4 +1,5 @@
 {
   "node": true,
+  "asi": true,
   "-W030": true
 }
