@@ -1,6 +1,9 @@
 node_modules/
 coverage/
-doc/
+docs/
+dist/
+lib/
 tmp/
 *.log
 *.tgz
+.nyc_output

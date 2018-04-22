@@ -1,10 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.sync = sync;
-exports.async = async;
 /**
  * @module lib/my
  * @copyright 2015 commenthol
@@ -16,10 +9,10 @@ exports.async = async;
  * @memberof module:lib/my
  * @return {String}
  */
-function sync() {
-  var sy = 'sy';
-  var nc = 'nc';
-  return sy + nc;
+export function sync () {
+  var sy = 'sy'
+  var nc = 'nc'
+  return sy + nc
 }
 
 /**
@@ -28,8 +21,8 @@ function sync() {
  * @param {Function} callback - Type: `function({Error}, {String})`
  * @param {Number} [msecs] - milliseconds it takes to call `callback`
  */
-function async(callback, msecs) {
+export function async (callback, msecs) {
   setTimeout(function () {
-    callback && callback(null, 'async');
-  }, msecs || 10);
+    callback && callback(null, 'async')
+  }, msecs || 10)
 }

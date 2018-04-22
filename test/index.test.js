@@ -6,15 +6,14 @@
 'use strict'
 
 var assert = require('assert')
-var my = require('..')
-var MyClass = my.MyClass
+var my = require('..').default
 
-/* globals describe, it, before, beforeEach, afterEach */
+var MyClass = my.MyClass
 
 describe('what you like to test', function () {
   describe('in detail', function () {
     this.timeout(3500) // mocha usually exits a test at 2000ms with an assertion.
-                       // If your tests run longer set `this.timeout(msecs)`
+    // If your tests run longer set `this.timeout(msecs)`
     it('runs synchronously', function () {
       assert.equal(my.sync(), 'sync')
     })
@@ -42,7 +41,7 @@ describe.skip('if you need to skip a number of tests', function () {
 
 describe('exclusive tests', function () {
   // Add `.only` to test only one test (can be added to `describe` as well)
-  it/* .only*/('is the "only" test executed', function () {
+  it/* .only */('is the "only" test executed', function () {
     assert.ok(true)
   })
 })
@@ -50,13 +49,13 @@ describe('exclusive tests', function () {
 describe('tests with setup and teardown', function () {
   var cls
 
-  before(function () {     // executed only once per `describe`
+  before(function () { // executed only once per `describe`
     cls = new MyClass({ array: [ 1 ] })
   })
   beforeEach(function () { // before each `it`
     cls.mul(4)
   })
-  afterEach(function () {  // after each `it`
+  afterEach(function () { // after each `it`
     cls.add(2)
   })
   it('#1', function () {

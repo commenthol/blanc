@@ -3,12 +3,15 @@
  * @license MIT
  */
 
-'use strict'
+import {sync, async} from './my'
+import MyClass from './myclass'
 
-var M = require('./lib/my')
-M.MyClass = require('./lib/myclass')
-
-module.exports = M
+const M = {
+  sync,
+  async,
+  MyClass
+}
+export default M
 
 /* @see https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md */
 /* istanbul ignore if */
