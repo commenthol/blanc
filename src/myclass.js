@@ -19,7 +19,7 @@ export default class MyClass {
     /** @member {Object} */
     this.options = options || {}
     /** @member {Array} */
-    this.array = options.array || [ 1, 2 ]
+    this.array = options.array || [1, 2]
   }
 
   /**

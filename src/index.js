@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import {sync, async} from './my'
+import { sync, async } from './my'
 import MyClass from './myclass'
 
 const M = {

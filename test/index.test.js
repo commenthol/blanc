@@ -50,7 +50,7 @@ describe('tests with setup and teardown', function () {
   var cls
 
   before(function () { // executed only once per `describe`
-    cls = new MyClass({ array: [ 1 ] })
+    cls = new MyClass({ array: [1] })
   })
   beforeEach(function () { // before each `it`
     cls.mul(4)
@@ -59,12 +59,12 @@ describe('tests with setup and teardown', function () {
     cls.add(2)
   })
   it('#1', function () {
-    assert.deepEqual(cls.array, [ 1, 4 ])
+    assert.deepEqual(cls.array, [1, 4])
   })
   it('#2', function () {
-    assert.deepEqual(cls.array, [ 1, 4, 6, 24 ])
+    assert.deepEqual(cls.array, [1, 4, 6, 24])
   })
   it('#3', function () {
-    assert.deepEqual(cls.array, [ 1, 4, 6, 24, 26, 104 ])
+    assert.deepEqual(cls.array, [1, 4, 6, 24, 26, 104])
   })
 })
