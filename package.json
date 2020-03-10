@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/commenthol/blanc.git"
+    "url": "git+https://github.com/commenthol/blanc.git"
   },
   "scripts": {
     "all": "npm run clean && npm run lint && npm run build && npm test",
@@ -33,7 +33,7 @@
     "build:cjs": "babel -d lib src",
     "build:dist": "rollup -c rollup.conf.js",
     "clean": "rimraf lib es coverage .nyc_output",
-    "clean:all": "rimraf node_modules && npm run clean",
+    "clean:all": "npm run clean && rimraf node_modules",
     "coverage": "nyc -r text -r html npm test",
     "doc": "jsdoc -c scripts/jsdoc/jsdoc.json",
     "lint": "eslint '**/*.js'",
