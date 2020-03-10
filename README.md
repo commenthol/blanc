@@ -8,9 +8,11 @@
 This is a boilerplate for a node module using:
 
 * [mocha][] tests,
-* [istanbul][] for code coverage,
+* [nyc][] for code coverage,
 * [eslint][] using [standard][] syntax for code linting and
-* [jsdox][] for documentation.
+* [jsdoc][] for documentation.
+* [babel][] for transpilation
+* [rollup][] for bundling
 
 The files contain examples to show the usage of the different tools in your code.
 
@@ -31,10 +33,10 @@ The files contain examples to show the usage of the different tools in your code
 
 Run the different tools from `npm`
 
-* `npm test`      - Run tests
-* `npm run cover` - Run istanbul code coverage (shows code coverage; open `coverage/lcov-report/index.html` after run)
-* `npm run lint`  - Linting the source
-* `npm run doc`   - Generate documentation from source (open `doc/index.html` after run)
+* `npm test`         - Run tests
+* `npm run coverage` - Run istanbul code coverage (shows code coverage; open `coverage/lcov-report/index.html` after run)
+* `npm run lint`     - Linting the source
+* `npm run doc`      - Generate documentation from source (open `doc/index.html` after run)
 
 
 ### Example ...
@@ -49,7 +51,7 @@ with the source of its origin and licence.
 
 ## License
 
-Copyright (c) 2016 commenthol (MIT License)
+Copyright (c) 2016- commenthol (MIT License)
 
 See [LICENSE][] for more info.
 
@@ -57,28 +59,24 @@ See [LICENSE][] for more info.
 
 <!-- !ref -->
 
+* [babel][babel]
 * [eslint][eslint]
 * [eslint-config-standard][eslint-config-standard]
 * [eslint-plugin-standard][eslint-plugin-standard]
-* [istanbul][istanbul]
 * [jsdox][jsdox]
-* [jshint][jshint]
 * [LICENSE][LICENSE]
 * [mocha][mocha]
+* [nyc][nyc]
 * [standard][standard]
 
 <!-- ref! -->
 
 [LICENSE]: ./LICENSE
 [mocha]: http://mochajs.org/
-[jshint]: http://jshint.com/docs/options/
 [eslint]: http://eslint.org
 [eslint-plugin-standard]: https://github.com/xjamundx/eslint-plugin-standard
 [eslint-config-standard]: https://github.com/feross/eslint-config-standard
 [standard]: http://standardjs.com
 [jsdox]: http://jsdox.org/
-[istanbul]: https://github.com/yahoo/istanbul/
-
-
-
-
+[nyc]: https://istanbul.js.org/
+[babel]: https://babeljs.io/

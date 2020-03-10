@@ -6,14 +6,21 @@
   "env": {
     "development": {
       "presets": [
-        "env",
-        "stage-2"
+        "@babel/preset-env"
+      ],
+      "plugins": [
       ]
     },
     "es5": {
       "presets": [
-        [ "env", { "modules": false } ],
-        "stage-2"
+        [
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": [
       ]
     }
   }
