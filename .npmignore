@@ -1,9 +1,0 @@
-node_modules/
-coverage/
-test/
-docs/
-tmp/
-*.log
-*.tgz
-.*
-Makefile

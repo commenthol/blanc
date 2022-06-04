@@ -5,10 +5,11 @@
 
 'use strict'
 
-var assert = require('assert')
-var my = require('..').default
+import assert from 'assert/strict'
+// import my from '../src/index.js'
+import my from '../dist/index.js'
 
-var MyClass = my.MyClass
+const MyClass = my.MyClass
 
 describe('what you like to test', function () {
   describe('in detail', function () {
@@ -47,7 +48,7 @@ describe('exclusive tests', function () {
 })
 
 describe('tests with setup and teardown', function () {
-  var cls
+  let cls
 
   before(function () { // executed only once per `describe`
     cls = new MyClass({ array: [1] })
