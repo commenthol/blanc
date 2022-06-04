@@ -3,14 +3,13 @@
 > A node module boilerplate
 
 [![NPM version](https://badge.fury.io/js/blanc.svg)](https://www.npmjs.com/package/blanc/)
-[![Build Status](https://secure.travis-ci.org/commenthol/blanc.svg?branch=master)](https://travis-ci.org/commenthol/blanc)
+[![Build Status](https://github.com/commenthol/blanc/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/commenthol/blanc/actions/workflows/ci.yml?query=branch%3Amain)
 
 This is a boilerplate for a node module using:
 
 * [mocha][] tests,
-* [nyc][] for code coverage,
+* [c8][] for code coverage,
 * [eslint][] using [standard][] syntax for code linting and
-* [jsdoc][] for documentation.
 * [babel][] for transpilation
 * [rollup][] for bundling
 
@@ -34,9 +33,9 @@ The files contain examples to show the usage of the different tools in your code
 Run the different tools from `npm`
 
 * `npm test`         - Run tests
-* `npm run coverage` - Run istanbul code coverage (shows code coverage; open `coverage/lcov-report/index.html` after run)
+* `npm run coverage` - Run c8 code coverage (shows code coverage; open `coverage/index.html` after run)
 * `npm run lint`     - Linting the source
-* `npm run doc`      - Generate documentation from source (open `doc/index.html` after run)
+* `npm run types`    - Generate typescript types 
 
 
 ### Example ...
@@ -60,13 +59,11 @@ See [LICENSE][] for more info.
 <!-- !ref -->
 
 * [babel][babel]
+* [c8][c8]
 * [eslint][eslint]
-* [eslint-config-standard][eslint-config-standard]
-* [eslint-plugin-standard][eslint-plugin-standard]
-* [jsdox][jsdox]
 * [LICENSE][LICENSE]
 * [mocha][mocha]
-* [nyc][nyc]
+* [rollup][rollup]
 * [standard][standard]
 
 <!-- ref! -->
@@ -74,9 +71,7 @@ See [LICENSE][] for more info.
 [LICENSE]: ./LICENSE
 [mocha]: http://mochajs.org/
 [eslint]: http://eslint.org
-[eslint-plugin-standard]: https://github.com/xjamundx/eslint-plugin-standard
-[eslint-config-standard]: https://github.com/feross/eslint-config-standard
 [standard]: http://standardjs.com
-[jsdox]: http://jsdox.org/
-[nyc]: https://istanbul.js.org/
+[c8]: https://github.com/bcoe/c8
 [babel]: https://babeljs.io/
+[rollup]: https://rollupjs.org
