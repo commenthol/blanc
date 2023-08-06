@@ -23,20 +23,20 @@ export default class MyClass {
   }
 
   /**
- * length of internal array
- * @return {Number} - length of array
- */
+   * length of internal array
+   * @return {Number} - length of array
+   */
   length () {
     return this.array.length
   }
 
   /**
- * push item to internal array
- * @param {Number} item
- * @return {Number} - item
- */
+   * push item to internal array
+   * @param {Number} item
+   * @return {Number} - item
+   */
   push (item) {
-  /* istanbul ignore else */ // tell istanbul that there is no need for a default `else`
+    /* istanbul ignore else */ // tell istanbul that there is no need for a default `else`
     if (item) {
       this.array.push(item)
     }
@@ -44,46 +44,46 @@ export default class MyClass {
   }
 
   /**
- * get the last item from the array
- * @return {Number} last item
- */
+   * get the last item from the array
+   * @return {Number} last item
+   */
   last () {
     return this.array[this.length() - 1]
   }
 
   /**
- * multiply the last item on the array with `factor` and push it on the stack
- * @param {Number} [factor] - factor to multiply with. Default is 1
- * @return {Number} result of operation
- */
+   * multiply the last item on the array with `factor` and push it on the stack
+   * @param {Number} [factor] - factor to multiply with. Default is 1
+   * @return {Number} result of operation
+   */
   mul (factor) {
     factor = factor || 1
     /* istanbul ignore if */ // ignore the following if block
     if (factor === 1) {
-      factor = factor // eslint-disable-line
+      factor = factor; // eslint-disable-line
     }
     return this.push(this.last() * factor)
   }
 
   /**
- * add `sum` to the last item on the array and push it on the stack
- * @param {Number} [sum] - sum to add with. Default is 1
- * @return {Number} result of operation
- */
+   * add `sum` to the last item on the array and push it on the stack
+   * @param {Number} [sum] - sum to add with. Default is 1
+   * @return {Number} result of operation
+   */
   add (sum) {
     sum = sum || 1
     // this code never executes
     if (0) { // eslint-disable-line
       sum += 0
     }
-    if (1) return this.push(this.last() + sum) // eslint-disable-line
+    if (1) return this.push(this.last() + sum); // eslint-disable-line
     // this code is never reached
     sum *= 12 - sum
     return sum
   }
 
   untested () {
-  // this function has no test case
+    // this function has no test case
     return 1
   }
 }

@@ -2,8 +2,9 @@
 
 > A node module boilerplate
 
-[![NPM version](https://badge.fury.io/js/blanc.svg)](https://www.npmjs.com/package/blanc/)
-[![Build Status](https://github.com/commenthol/blanc/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/commenthol/blanc/actions/workflows/ci.yml?query=branch%3Amain)
+[![npm-badge][npm-badge]][npm]
+[![actions-badge][actions-badge]][actions]
+![types-badge][types-badge]
 
 This is a boilerplate for a node module using:
 
@@ -46,7 +47,7 @@ Run the different tools from `npm`
 If you contribute code to this project, you are implicitly allowing your
 code to be distributed under the MIT license. You are also implicitly
 verifying that all code is your original work or correctly attributed
-with the source of its origin and licence.
+with the source of its origin and license.
 
 ## License
 
@@ -69,6 +70,12 @@ See [LICENSE][] for more info.
 <!-- ref! -->
 
 [LICENSE]: ./LICENSE
+[npm-badge]: https://badgen.net/npm/v/blanc
+[npm]: https://www.npmjs.com/package/blanc
+[actions-badge]: https://github.com/commenthol/blanc/workflows/CI/badge.svg?branch=main&event=push
+[actions]: https://github.com/commenthol/blanc/actions/workflows/ci.yml?query=branch%3Amain
+[types-badge]: https://badgen.net/npm/types/blanc
+
 [mocha]: http://mochajs.org/
 [eslint]: http://eslint.org
 [standard]: http://standardjs.com

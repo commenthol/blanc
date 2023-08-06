@@ -1,5 +1,5 @@
-import babel from '@rollup/plugin-babel'
-import { terser } from 'rollup-plugin-terser'
+// import babel from '@rollup/plugin-babel'
+import terser from '@rollup/plugin-terser'
 
 process.env.BABEL_ENV = 'es5'
 
@@ -17,9 +17,9 @@ export default [
         footer: 'module.exports = exports.default;'
       }],
     plugins: [
-      babel({
-        exclude: 'node_modules/**'
-      })
+      // babel({
+      //   exclude: 'node_modules/**'
+      // })
     ]
   },
   {
